@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="#E9DCD3"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:padding="15dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivCake"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:src="@drawable/twolayercake" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tvNamaKue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Two Layer Cake"
+                android:layout_marginLeft="5dp"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/tvDeskripsiKue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:paddingHorizontal="10dp"
+                android:layout_marginTop="5dp">
+                <Button
+                    android:id="@+id/btnDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:text="Detail" />
+                <Button
+                    android:id="@+id/btnShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:text="Share" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
